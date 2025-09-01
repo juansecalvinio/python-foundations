@@ -3,7 +3,6 @@
 # clase abstracta
 
 from abc import ABC, abstractmethod
-from re import A
 
 
 class BankAccount(ABC):  # heredo de ABC y se convierte en clase abstracta
@@ -57,5 +56,5 @@ payroll = PayrollAccount("John", 1000)
 saving.withdraw(100)
 payroll.withdraw(100)
 
-print("Cuenta de ahorro:", saving.check_balance())
-print("Cuenta sueldo:", payroll.check_balance())
+print("Cuenta de ahorro:", saving.check_balance())  # 895.0
+print("Cuenta sueldo:", payroll.check_balance())  # 900
